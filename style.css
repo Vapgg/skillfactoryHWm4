@@ -1,0 +1,120 @@
+body{
+    background-image: url(img/backima.jpg);/* Фоновое изображение */
+    background-size: cover;
+    background-position: center;
+}
+
+.header{
+    border-bottom: 4px solid black;
+    margin-bottom: 20px;
+}
+
+/* Стилизация ссылок внутри заголовка */
+.header-link {
+    text-decoration: none; /* Убрать подчеркивание */
+    color: #333; /* Цвет текста */
+    font-size: 50px; /* Размер шрифта */
+    margin-right: 20px; /* Отступ справа между ссылками */
+    transition: color 0.3s ease; /* Плавное изменение цвета при наведении */
+}
+
+/* Стилизация ссылок при наведении */
+.header-link:hover {
+    color: #FF5733; /* Изменить цвет текста при наведении */
+}
+
+/* Стилизация основного контента внутри <main> */
+.main1 {
+    max-width: 1000px; /* Максимальная ширина контента */
+    border: 5px solid rgb(214, 12, 12); /* Границы */
+    border-radius: 20%; /* Закругление границ */
+    margin: 0 auto; /* Центрирование по горизонтали */
+    padding: 20px; /* Внутренние отступы */
+    font-family: Arial, sans-serif; /* Шрифт */
+    line-height: 1.6; /* Межстрочный интервал */
+}
+
+/* Стилизация заголовка <h1> */
+h1 {
+    font-size: 52px; /* Размер шрифта */
+    color: #333; /* Цвет текста */
+}
+
+/* Стилизация заголовка <h2> */
+h2 {
+    font-size: 34px; 
+    color: #1f1061; 
+    margin-top: 20px;
+}
+
+/* Стилизация абзаца <p> */
+p {
+    font-size: 24px; 
+    color: #1d1919; 
+    margin-top: 10px;
+}
+
+
+footer{
+    height: 200px;
+    width: 100%;
+    border: 3px solid red;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-image: url(img/lepes.jpg);
+
+}
+
+/* Стили для основного блока контактов */
+.main__first {
+    padding: 20px; /* Отступ вокруг содержимого */
+    background-color: #f5f5f5; /* Цвет фона */
+    border-radius: 8px; /* Закругление углов */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Тень блока */
+}
+
+/* Стили для заголовка h1 */
+.main__first h1 {
+    font-size: 28px; /* Размер шрифта */
+    color: #333; /* Цвет текста */
+}
+
+/* Стили для подзаголовка h2 */
+.main__first h2 {
+    font-size: 22px; /* Размер шрифта */
+    color: #666; /* Цвет текста */
+}
+
+/* Стили для маркированного списка ul */
+.main__first ul {
+    list-style-type: none; /* Убираем маркеры списка */
+    padding: 0; /* Убираем отступы внутри списка */
+    margin-top: 20px; /* Отступ сверху списка */
+}
+
+/* Стили для элементов списка li */
+.main__first li {
+    margin-bottom: 10px; /* Отступ между элементами списка */
+}
+
+/* Стили для ссылок a внутри списка */
+.main__first li a {
+    text-decoration: none; /* Убираем подчеркивание у ссылок */
+    color: #007bff; /* Цвет текста ссылок */
+    font-weight: bold; /* Жирный шрифт */
+}
+
+/* Стили для ссылок a при наведении */
+.main__first li a:hover {
+    text-decoration: underline; /* Добавляем подчеркивание при наведении */
+}
+
+/* Стили для номера телефона в списке */
+.main__first li a[href^="tel:"]::before {
+    content: "\1F4DE "; /* Unicode иконка телефона, тут помог интернет с юникодом */
+    font-size: 18px; /* Размер иконки */
+    vertical-align: middle; /* Выравнивание по вертикали */
+    margin-right: 5px; /* Отступ справа от иконки */
+}
+
